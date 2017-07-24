@@ -1,0 +1,67 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Bungee', cursive;
+}
+body {
+	background-image: url(https://raw.githubusercontent.com/jschomay/phaser-demo-game/master/assets/starfield.png);
+	background-size:cover;
+}
+.basic-menu {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: space-around;
+	color:white;
+	text-align: center;
+}
+#high-score-info {
+	text-align: center;
+}
+button {
+	text-shadow:none;
+	background-color:#f15a29;
+	border-color:#f15a29;
+	border-style:none;
+	border-radius:4px;
+	width:15rem;
+	margin-top:1rem;
+	padding:1rem 1.5rem;
+	color:white;
+	font-size:1.125rem;
+}
+button:hover {
+	cursor:pointer;
+	background-color:DarkRed;
+}
+#game-menu {
+    top: 0px;
+    color: #000;
+}
+#game-menu, #play-again-menu {
+	position: fixed;
+	height:3rem;
+	width:100vw;
+	display: block;
+    padding: 10px 9px;
+    padding-bottom: 6px;
+    font-size: 16px;
+    z-index: 999999;
+    display: none;
+    text-align: center;
+    right: 0px;
+    opacity: 1;
+}
+#play-again-menu {
+    top: 8rem;
+    color: white;
+}
+h3, #waiting-lobby {
+	color:white;
+}
+#waiting-lobby {
+	display: none;
+	text-align: center;
+}
+#instructions, #high-scores {
+	display: none;
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+  <html lang="en">
+    <head>
+      <title>Pappu-Pakia-Ship</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class = "basic-menu" id = "main-menu">
+        <h1>2 Player Pappu-Pakia-Ship Game</h1>
+        <input id = "name" type = "text" placeholder="Enter Pappu Name"/>
+        <button id = "startbtn">START</button>
+        <button id = "highscorebtn">HIGH SCORES</button>
+        <button id = "rulesbtn">RULES</button>
+        <p>Takes two Pappu to play.</p>
+        <p>Can also use two tabs to test.</p>
+      </div>
+      <div class = "basic-menu" id = "instructions">
+        <h1>Controls</h1>
+        <h3>UP arrow to move forward</br>LEFT arrow to rotate left</br>RIGHT arrow to rotate right</br>F to fire</h3>
+        <h3>Hitting the enemy ship: 1 point </br> Crashing into an asteroid: -1 point</br> 5 points to win!</h3>
+        <h2>Mobile</h2>
+        <h3>Click to both move and shoot</h3>
+        <button class = "back-to-menu">Main</button>
+      </div>
+      <div class = "basic-menu" id = "high-scores">
+        <h1>HIGHEST SCORE</h1>
+        <h3 id = "high-score-info"></h3>
+        <button class = "back-to-menu">Main</button>
+      </div>
+      <div id = "waiting-lobby">
+        <h2>Waiting on other Pappu</h2>
+        <h2>Controls</h2>
+        <h3>UP to move forward</br>LEFT to rotate left</br>RIGHT to rotate right</br>F to fire</h3>
+        <h3>Hitting the enemy ship: 1 point </br> Crashing into an asteroid: -1 point</br> 5 points to win!</h3>
+        <h2>Mobile</h2>
+        <h3>Click to both move and shoot</h3>
+      </div>
+      <div id = "game-menu">
+        <h3 id = "my-score">My Score: 0 <br/>Enemy Score: 0</h3>
+      </div>
+      <div id = "play-again-menu">
+        <h1>Winner is:</h1>
+        <h2 id = "winners-info-end-game"></h2>
+        <button id = "play-again-button">Play Again</button>
+      </div>
+      <div id = "phaser"></div>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="//cdn.jsdelivr.net/phaser/2.6.2/phaser.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/model.js"></script>
+    </body>
+  </html>
+
